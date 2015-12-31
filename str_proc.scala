@@ -20,4 +20,6 @@ println("Words in your sentence: " + words.length)
 val avg_word_len = { var sum = 0; words_clean.map {w => sum = sum + w.length}; sum/words.length }
 printf("Average word length: %d" + '\n' + '\n', avg_word_len)
 
+var letters = new scala.collection.mutable.HashMap[Char, Int]
+words_clean map { w => w map { l => if (letters.getOrElse(l, 0) == 0) l += (l -> 1) else letters(l) += 1 } }
 println("Frequency of each word: ")
