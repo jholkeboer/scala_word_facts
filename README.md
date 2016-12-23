@@ -1,0 +1,1 @@
+Just run `scala str_proc/.scala`
