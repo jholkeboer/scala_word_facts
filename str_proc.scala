@@ -5,7 +5,7 @@ val sentence = "Practicing Scala syntax and string processing. The quick brown f
 try {
   if (sentence.length == 0) throw new IllegalArgumentException("Sentence was empty")
 } catch {
-  case _: IllegalArgumweentException => println("Sentence was empty.")
+  case _: IllegalArgumentException => println("Sentence was empty.")
 }
 
 println("Reading dictionary...")
