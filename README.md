@@ -1,1 +1,1 @@
-Just run `scala str_proc/.scala`
+Just run `scala str_proc.scala`
